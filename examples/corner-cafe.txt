@@ -1,0 +1,9 @@
+stall: Corner cafe
+date: 2026-10-15
+22 filter-coffee 25
+11 bun 30
+filter-coffee leftover 4
+cash 700
+upi 455
+card 120
+bought milk 160

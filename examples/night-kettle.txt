@@ -1,0 +1,11 @@
+stall: Night kettle
+date: 2026-10-15
+14 chai 20
+9 samosa 30
+2 bun-maska 25
+samosa leftover 0
+chai leftover 6
+cash 680
+upi 410
+bought milk 90
+bought gas 40

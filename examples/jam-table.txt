@@ -1,0 +1,8 @@
+stall: Jam table
+date: 2026-10-15
+6 mixed-berry 180
+4 ginger 150
+ginger leftover 2
+cash 900
+upi 1080
+bought jars 220

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: closetab-web
+    runtime: static
+    buildCommand: cd web && npm install && npm run build
+    staticPublishPath: web/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://closetab-api.onrender.com
+
+  - type: web
+    name: closetab-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn closetab.app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"

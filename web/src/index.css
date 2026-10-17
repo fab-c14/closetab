@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --paper: #f4f8f5;
+  --panel: #f7faf8;
+  --ink: #14201a;
+  --muted: #4e5c54;
+  --line: #c9d5cc;
+  --accent: #0d7a45;
+  --accent-ink: #f3faf6;
+  --wash: #dceee4;
+  --foam: #e7f4ec;
+  --tide: #d7eee6;
+  --reed: #e3f3e7;
+  --lagoon: #d3ebe4;
+  --pool: #eaf6f1;
+  --glen: #dcedea;
+  --miss: #9a3b32;
+  color-scheme: light;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.field-dots {
+  background-color: var(--tide);
+  background-image: radial-gradient(circle, rgba(13, 122, 69, 0.35) 1px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+.field-rules {
+  background-color: var(--reed);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    rgba(13, 122, 69, 0.09) 32px
+  );
+}
+.bill {
+  background:
+    radial-gradient(circle at 12px 0, transparent 7px, var(--panel) 7.5px) left top / 24px 16px repeat-x,
+    linear-gradient(var(--panel), var(--panel)) left 16px / 100% calc(100% - 16px) no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
